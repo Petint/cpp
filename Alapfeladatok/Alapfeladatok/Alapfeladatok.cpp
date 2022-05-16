@@ -17,13 +17,29 @@ bool isNumber(const string& str)
 void szovegszam()
 {
     string du;
-    cout << "Egy beolvasott stringrõl állapítjuk meg, hogy az egész szám-e vagy sem.\nAdj meg egy számot: ";
+    cout << "Egy beolvasott stringrol allapítjuk meg, hogy az egesz szam-e vagy sem.\nAdj meg egy szamot: ";
     cin >> du;
     // cout << du;
-    isNumber(du) ? cout << "Ez egy egyész szám,\n" : cout << "Ez nem egy egész szám";
+    isNumber(du) ? cout << "Ez egy egyesz szam,\n" : cout << "Ez nem egy egesz szam";
+}
+
+void nagyobb()
+{
+    /*
+    Feladat leírás:
+    Olvass be két egész számot. Írd ki a nagyobbat. Ha egyformák, akkor írd ki, hogy egyenlõk.
+    Biztosra vehetjük, hogy egész számot adunk meg.
+    */
+    int num1;
+    int num2;
+    cout << "Ket beadtoo szambol melallapitjuk hogy melyik a nagyobb.\nAdd meg az elsõ szamot: ";
+    cin >> num1;
+    cout << "\nAdd meg a második számot: ";
+    cin >> num2;
 }
 
 int main()
 {
     szovegszam();
+    return 0;
 }
