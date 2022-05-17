@@ -34,12 +34,24 @@ void nagyobb()
     int num2;
     cout << "Ket beadtoo szambol melallapitjuk hogy melyik a nagyobb.\nAdd meg az elsõ szamot: ";
     cin >> num1;
-    cout << "\nAdd meg a második számot: ";
+    cout << "Add meg a második számot: ";
     cin >> num2;
+    if (num1 == num2)
+    {
+        cout << "A ket szam egyenlo.";
+    }
+    else if (num1 > num2) {
+        cout << "A nagyobb szam: " << num1;
+    }
+    else
+    {
+        cout << "A nagyobb szam: " << num2;
+    }
 }
 
 int main()
 {
     szovegszam();
+    nagyobb();
     return 0;
 }
