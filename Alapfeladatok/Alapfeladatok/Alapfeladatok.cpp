@@ -47,11 +47,28 @@ void nagyobb()
     {
         cout << "A nagyobb szam: " << num2;
     }
+    cout << "\n";
+}
+
+void paros()
+{
+    int num1;
+    cout << "Egy beadott szamrol megalapitjuk, hogy paros-e vagy paratlan.\nAdd meg a szamot: ";
+    cin >> num1;
+    if (num1 % 2 == 0)
+    {
+        cout << "Az adott szam paros.";
+    }
+    else
+    {
+        cout << "Az adott szam paratlan.";
+    }
 }
 
 int main()
 {
     szovegszam();
     nagyobb();
+    paros();
     return 0;
 }
