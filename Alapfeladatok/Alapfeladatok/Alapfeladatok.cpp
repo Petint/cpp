@@ -68,9 +68,9 @@ void Szoveghossz()
     // Olvass be két szöveget és írd ki a rövidebbet. Ha egyforma hosszúak, akkor írd ki, hogy egyformák.
     string du1;
     string du2;
-    cout << "Két beolvasott szövegrõl állapítjuk meg, hogy melyik a rövidebb.\nAdj meg egy szöveget: ";
+    cout << "Ket beolvasott szovegrol állapítjuk meg, hogy melyik a rovidebb.\nAdj meg egy szoveget: ";
     cin >> du1;
-    cout << "Adj meg egy másik szöveget: ";
+    cout << "Adj meg egy masik szoveget: ";
     cin >> du2;
     if (du1.length() > du2.length())
     {
@@ -82,7 +82,25 @@ void Szoveghossz()
     }
     else
     {
-        cout << "A ket szöveg hossza egyenlo.";
+        cout << "A ket szoveg hossza egyenlo.";
+    }
+}
+
+void Nagyobb()
+{
+    /*
+    Olvass be egy egész számot. Írd ki ha nagyobb tíznél: "Nagy", különben azt, hogy "Kicsi".
+    Biztosra vehetjük, hogy egész számot adunk meg.
+    */
+    int du;
+    cout << "Egy szamrol allapitsuk meg hogy nagyobbe 10-nel.\nAdj meg egy szamot: ";
+    cin >> du;
+    if (du >= 10)
+    {
+        cout << "Nagy\n";
+    }
+    else {
+        cout << "Kicsi\n";
     }
 }
 
@@ -92,5 +110,6 @@ int main()
     nagyobb();
     Paros();
     Szoveghossz();
+    Nagyobb();
     return 0;
 }
