@@ -104,12 +104,34 @@ void Nagyobb()
     }
 }
 
+void Dupla()
+{
+    /*
+    Olvassunk be egy egész számot. 
+    Ha nem egész számot adtak meg, érjen véget azzal, hogy kírjuk: "HIBA: Nem egész számot adtál meg!". 
+    Különben írjuk ki a szám dupláját.
+    */
+    string du;
+    cout << "Kiirjuk egy szam dulpjaat.\nAdj meg egy szoveget: ";
+    cin >> du;
+    if (isNumber(du))
+    {
+        cout << stoi(du) * 2 << "\n";
+    }
+    else
+    {
+        cout << "Nem szamot adtal meg!\n";
+    }
+    
+}
+
 int main()
 {
-    szovegszam();
-    nagyobb();
-    Paros();
-    Szoveghossz();
-    Nagyobb();
+    //szovegszam();
+    //nagyobb();
+    //Paros();
+    //Szoveghossz();
+    //Nagyobb();
+    Dupla();
     return 0;
 }
