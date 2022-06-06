@@ -118,7 +118,7 @@ void Dupla()
     Különben írjuk ki a szám dupláját.
     */
     string du;
-    cout << "Kiirjuk egy szam dulpjaat.\nAdj meg egy szoveget: ";
+    cout << "Kiirjuk egy szam dulpjaat.\nAdj meg egy szamot: ";
     cin >> du;
     if (isNumber(du))
     {
@@ -155,6 +155,18 @@ void Negyzet()
     01-08 Egész szám négyzete
     Kérjen be egy számot a felhasználótól (ellenõrizze, hogy egész szám-e), ha egész szám, akkor írja ki a négyzetét, ha nem, akkor azt, hogy "Nem egész szám!"
     */
+    string du;
+    cout << "Kiirjuk egy szam negyzetet.\nAdj meg egy szamot: ";
+    cin >> du;
+    if (isNumber(du))
+    {
+        cout << stoi(du) * stoi(du) << "\n";
+    }
+    else
+    {
+        cout << "Nem szamot adtal meg!\n";
+    }
+
 }
 
 int main()
@@ -166,5 +178,6 @@ int main()
     //Nagyobb();
     //Dupla();
     //Betuker();
+    Negyzet();
     return 0;
 }
