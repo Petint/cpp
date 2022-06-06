@@ -207,9 +207,9 @@ void Mgh()
     int maghan;
     cout << "Egy szovegben megszamoljuk a maganhangzok szamat.\nAdj meg egy szoveget: ";
     string maganhangzok = "aáeéiíoóöõuúöõ";
-    for each (char letter in maganhangzok)
+    for (int i; i < maganhangzok.length(); i++)
     {
-        if (! du.find(letter))
+        if (! du.find(maganhangzok[i]))
         {
             maghan++;
         }
