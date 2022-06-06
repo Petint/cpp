@@ -149,6 +149,14 @@ void Betuker()
     }
 }
 
+void Negyzet()
+{
+    /*
+    01-08 Egész szám négyzete
+    Kérjen be egy számot a felhasználótól (ellenõrizze, hogy egész szám-e), ha egész szám, akkor írja ki a négyzetét, ha nem, akkor azt, hogy "Nem egész szám!"
+    */
+}
+
 int main()
 {
     //szovegszam();
@@ -157,6 +165,6 @@ int main()
     //Szoveghossz();
     //Nagyobb();
     //Dupla();
-    Betuker();
+    //Betuker();
     return 0;
 }
