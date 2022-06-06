@@ -13,6 +13,7 @@ bool isNumber(const string& str)
 
 void szovegszam()
 {
+    // 01-01 Szöveg-szám
     // Olvassunk be egy számot. Ha nem egész szám, akkor írjuk ki, hogy "Nem egész szám", különben írjuk ki, hogy "Egész szám".
     string du;
     cout << "Egy beolvasott stringrol allapítjuk meg, hogy az egesz szam-e vagy sem.\nAdj meg egy szamot: ";
@@ -23,6 +24,7 @@ void szovegszam()
 void nagyobb()
 {
     /*
+    01-02 Nagyobb
     Feladat leírás:
     Olvass be két egész számot. Írd ki a nagyobbat. Ha egyformák, akkor írd ki, hogy egyenlõk.
     Biztosra vehetjük, hogy egész számot adunk meg.
@@ -49,6 +51,7 @@ void nagyobb()
 
 void Paros()
 {
+    // 01-03 Páros-páratlan
     // Olvassunk be egy egész számot. Ha nem egész szám, akkor írjuk ki, hogy "Nem egész szám", különben írjuk ki, hogy páros-e vagy páratlan.
     int num1;
     cout << "Egy beadott szamrol megalapitjuk, hogy paros-e vagy paratlan.\nAdd meg a szamot: ";
@@ -65,6 +68,7 @@ void Paros()
 
 void Szoveghossz()
 {
+    // 01-04 Szöveghossz
     // Olvass be két szöveget és írd ki a rövidebbet. Ha egyforma hosszúak, akkor írd ki, hogy egyformák.
     string du1;
     string du2;
@@ -89,6 +93,7 @@ void Szoveghossz()
 void Nagyobb()
 {
     /*
+    01-05 Nagyobb 10-nél
     Olvass be egy egész számot. Írd ki ha nagyobb tíznél: "Nagy", különben azt, hogy "Kicsi".
     Biztosra vehetjük, hogy egész számot adunk meg.
     */
@@ -107,6 +112,7 @@ void Nagyobb()
 void Dupla()
 {
     /*
+    * 01-06 Szám duplája
     Olvassunk be egy egész számot. 
     Ha nem egész számot adtak meg, érjen véget azzal, hogy kírjuk: "HIBA: Nem egész számot adtál meg!". 
     Különben írjuk ki a szám dupláját.
@@ -125,6 +131,14 @@ void Dupla()
     
 }
 
+void Betuker()
+{
+    /*
+    * 01-07 Betûkeresés
+    Olvassunk be egy szöveget és írjuk ki, hogy van-e benne kis "a"-betû.
+    */
+}
+
 int main()
 {
     //szovegszam();
@@ -132,6 +146,7 @@ int main()
     //Paros();
     //Szoveghossz();
     //Nagyobb();
-    Dupla();
+    //Dupla();
+    Betuker();
     return 0;
 }
