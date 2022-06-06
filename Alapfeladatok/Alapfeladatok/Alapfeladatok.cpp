@@ -197,6 +197,14 @@ void Hossz2()
     }
 }
 
+void Mgh()
+{
+    /*
+    01-14 Magánhangzók száma
+    Olvass be egy szöveget és írd ki, hogy hány magánhangzó van benne. A kis és nagybetûk is számítanak.
+    */
+}
+
 int main()
 {
     //szovegszam();
@@ -207,6 +215,6 @@ int main()
     //Dupla();
     //Betuker();
     //Negyzet();
-    Hossz2();
+    //Hossz2();
     return 0;
 }
