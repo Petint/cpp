@@ -203,6 +203,8 @@ void Mgh()
     01-14 Magánhangzók száma
     Olvass be egy szöveget és írd ki, hogy hány magánhangzó van benne. A kis és nagybetûk is számítanak.
     */
+    string du;
+    cout << "Egy szovegben megszamoljuk a maganhangzok szamat.\nAdj meg egy szoveget: ";
 }
 
 int main()
