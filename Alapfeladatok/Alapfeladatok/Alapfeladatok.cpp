@@ -137,6 +137,16 @@ void Betuker()
     * 01-07 Betûkeresés
     Olvassunk be egy szöveget és írjuk ki, hogy van-e benne kis "a"-betû.
     */
+    string du;
+    cout << "A bekért szovegrol megallapitjuk, hogy van-e benne kis \"a\" betû,\nAdj meg egy szoveget:";
+    cin >> du;
+    if (! du.find("a"))
+    {
+        cout << "A szoveg tartalmaz \"a\" betût.\n";
+    }
+    else {
+        cout << "A szoveg nem tartalalmaz \"a\" betût.";
+    }
 }
 
 int main()
