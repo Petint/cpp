@@ -164,9 +164,37 @@ void Negyzet()
     }
     else
     {
-        cout << "Nem szamot adtal meg!\n";
+        cout << "Nem egész szám!\n";
     }
 
+}
+
+void Hossz2()
+{
+    /*
+    01-09 Szöveghossz
+    Kérjen be két szöveget a felhasználótól, döntse el, hogy melyik a hosszabb és m
+    */
+    string du1;
+    string du2;
+    cout << "Ket beolvasott szovegrol állapítjuk meg, hogy melyik a rovidebb.\nAdj meg egy szoveget: ";
+    cin >> du1;
+    cout << "Adj meg egy masik szoveget: ";
+    cin >> du2;
+    int len1 = du1.length();
+    int len2 = du2.length();
+    if (len1 > len2)
+    {
+        cout << "Az elso szoveg hosszabb, ennyivel: " << len1 - len2 << "\n";
+    }
+    else if (len1 < len2)
+    {
+        cout << "A masodik szoveg hosszabb, ennyivel: " << len2 - len1 << "\n";
+    }
+    else
+    {
+        cout << "A ket szoveg hossza egyenlo.";
+    }
 }
 
 int main()
@@ -178,6 +206,7 @@ int main()
     //Nagyobb();
     //Dupla();
     //Betuker();
-    Negyzet();
+    //Negyzet();
+    Hossz2();
     return 0;
 }
