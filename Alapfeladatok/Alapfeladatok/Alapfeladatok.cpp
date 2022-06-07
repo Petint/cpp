@@ -234,6 +234,14 @@ void Abc() {
     cin >> name1;
     cout << "Add meg a második nevetû: ";
     cin >> name2;
+
+    if (name1 < name2)
+    {
+        cout << "A(z)" << name1 << "elorebb van mint a(z)" << name2 << ".\n";
+    }
+    else {
+        cout << "A(z)" << name2 << "elorebb van mint a(z)" << name1 << ".\n";
+    }
 }
 
 int main()
@@ -247,6 +255,7 @@ int main()
     //Betuker();
     //Negyzet();
     //Hossz2();
-    Mgh();
+    //Mgh();
+    Abc();
     return 0;
 }
