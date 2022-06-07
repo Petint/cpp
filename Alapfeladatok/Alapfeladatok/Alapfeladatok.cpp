@@ -237,10 +237,10 @@ void Abc() {
 
     if (name1 < name2)
     {
-        cout << "A(z)" << name1 << "elorebb van mint a(z)" << name2 << ".\n";
+        cout << "A(z) " << name1 << " elorebb van mint a(z) " << name2 << ".\n";
     }
     else {
-        cout << "A(z)" << name2 << "elorebb van mint a(z)" << name1 << ".\n";
+        cout << "A(z) " << name2 << " elorebb van mint a(z) " << name1 << ".\n";
     }
 }
 
