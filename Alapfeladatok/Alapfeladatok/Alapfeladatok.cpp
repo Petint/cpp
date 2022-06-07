@@ -208,14 +208,17 @@ void Mgh()
     cout << "Egy szovegben megszamoljuk a maganhangzok szamat.\nAdj meg egy szoveget: ";
     cin >> du;
     string maganhangzok = "aáeéiíoóöõuúöõ";
-    for (size_t i = 0; i < maganhangzok.length(); i++)
+    for (size_t j = 0; j < du.length(); j++)
     {
-        if (! du.find(maganhangzok[i]))
+        for (size_t i = 0; i < maganhangzok.length(); i++)
         {
-            maghan++;
+            if (!du.find(maganhangzok[i]))
+            {
+                maghan++;
+            }
         }
     }
-    cout << maghan;
+    cout<< "A szövegben" << maghan << "Magánhangzó található.";
 }
 
 int main()
