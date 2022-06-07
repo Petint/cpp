@@ -204,8 +204,9 @@ void Mgh()
     Olvass be egy szöveget és írd ki, hogy hány magánhangzó van benne. A kis és nagybetûk is számítanak.
     */
     string du;
-    int maghan;
+    int maghan = 0;
     cout << "Egy szovegben megszamoljuk a maganhangzok szamat.\nAdj meg egy szoveget: ";
+    cin >> du;
     string maganhangzok = "aáeéiíoóöõuúöõ";
     for (size_t i = 0; i < maganhangzok.length(); i++)
     {
@@ -214,6 +215,7 @@ void Mgh()
             maghan++;
         }
     }
+    cout << maghan;
 }
 
 int main()
@@ -227,5 +229,6 @@ int main()
     //Betuker();
     //Negyzet();
     //Hossz2();
+    Mgh();
     return 0;
 }
