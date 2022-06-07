@@ -218,7 +218,22 @@ void Mgh()
             }
         }
     }
-    cout<< "A szövegben" << maghan << "Magánhangzó található.";
+    cout<< "A szövegben" << maghan << "Magánhangzó található.\n";
+}
+
+void Abc() {
+    /*
+    01-19 ABC sorrend
+    Olvass be két angol nevet a konzolról és írd ki, melyik van elõbb a névsorban.
+    Pl. a végén ezt írd ki: David elõbb van a névsorban mint Marcus.
+    */
+
+    string name1;
+    string name2;
+    cout << "Ket nevrol allapitjuk meg hogy melyik van hlobb a nevsorban.\nAdd meg az elsõ nevet:";
+    cin >> name1;
+    cout << "Add meg a második nevetû: ";
+    cin >> name2;
 }
 
 int main()
