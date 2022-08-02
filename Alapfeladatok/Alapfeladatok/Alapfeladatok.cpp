@@ -244,6 +244,49 @@ void Abc() {
     }
 }
 
+void Szamolas() 
+{
+    /*01-26 Számolás
+Feladat leírás:
+Kérjünk be két egész számot.
+Ha nem egész számot adtak meg, akkor írjuk ki, hogy ez nem egész szám.
+Különben írjuk ki a két szám összegét, különbségét, szorzatát és hányadosát.
+A hányadost csak akkor írjuk ki, ha az osztó nem nulla.*/
+
+    string du1;
+    string du2;
+    cout << "Adj meg egy szamot: ";
+    cin >> du1;
+    cout << "Adj meg egy masik szamot: ";
+    cin >> du2;
+    if (isNumber(du1) && isNumber(du2))
+    {
+        int a = stoi(du1);
+        int b = stoi(du2);
+        string output;
+        int sum = a + b;
+        int diff = a - b;
+        int exp = a * b;
+        output += "A ket szam osszege: " + to_string(sum) + "\n";
+        output += "A ket szam kulombsege: " + to_string(diff) + "\n";
+        output += "A ket szam szorzata: " + to_string(exp) + "\n";
+        if (b != 0)
+        {
+            int sev = a / b;
+            output += to_string(sev) + "\n";
+        }
+        else {
+            output += "A masodik szam nulla volt.\n";
+        }
+        cout << output;
+    }
+    else
+    {
+        cout << "Nem egész szám!\n";
+    }
+
+}
+
 int main()
 {
     //szovegszam();
@@ -256,6 +299,7 @@ int main()
     //Negyzet();
     //Hossz2();
     //Mgh();
-    Abc();
+    //Abc();
+    Szamolas();
     return 0;
 }
