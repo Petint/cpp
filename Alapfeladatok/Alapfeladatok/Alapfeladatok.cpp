@@ -273,7 +273,7 @@ A hányadost csak akkor írjuk ki, ha az osztó nem nulla.*/
         if (b != 0)
         {
             int sev = a / b;
-            output += to_string(sev) + "\n";
+            output += "A ket szam hanyadosa: " + to_string(sev) + "\n";
         }
         else {
             output += "A masodik szam nulla volt.\n";
